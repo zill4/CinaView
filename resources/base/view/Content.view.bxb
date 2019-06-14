@@ -1,0 +1,41 @@
+result-view {
+  match: Content (this)
+  render {
+    layout {
+     section {
+        content {
+             title-area {
+          slot1 {
+              text {
+                  style (Title_S)
+                  value ("#{value(this.name)}") 
+              }
+          }
+          }
+          image {
+            //
+              url("#{value(this.image)}")
+          }
+          
+          paragraph {
+           value {
+              template ("Size: #{value(this.size)}")
+          }
+          style (Detail_M)
+          }
+                   paragraph {
+           value {
+              template ("Age: #{value(this.age)}")
+          }
+          style (Detail_M)
+          }         paragraph {
+           value {
+              template ("Gender: #{value(this.gender)}") 
+          }
+          style (Detail_M)
+          }
+      }
+    }
+  }
+  }
+}

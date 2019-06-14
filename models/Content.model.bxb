@@ -1,0 +1,38 @@
+structure (Content) {
+  description (Output)
+  property (age) {
+    type (core.Text)
+    min (Optional) max (One)
+    visibility (Private)
+  }
+   property (color) {
+    type (core.Text)
+    min (Optional) max (One)
+    visibility (Private)
+  }
+   property (gender) {
+    type (core.Text)
+    min (Optional) max (One)
+    visibility (Private)
+  }
+   property (breed) {
+    type (core.Text)
+    min (Optional) max (One)
+    visibility (Private)
+  }
+    property (name) {
+    type (core.Text)
+    min (Optional) max (One)
+    visibility (Private)
+  }
+   property (size) {
+    type (core.Text)
+    min (Optional) max (One)
+    visibility (Private)
+  }
+  property (image) {
+    type (viv.core.Url)
+    min (Optional) max (One)
+    visibility (Private)
+  }
+}
