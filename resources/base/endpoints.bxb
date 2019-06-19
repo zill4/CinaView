@@ -4,5 +4,33 @@ endpoints {
       accepted-inputs (searchTerm)
       local-endpoint (GetContent.js)
     }
+    action-endpoint (GetSpecificContent) {
+      accepted-inputs (id)
+      local-endpoint (GetSpecificContent.js)
+    }
+      action-endpoint (GetCredits) {
+      accepted-inputs (id)
+      local-endpoint (GetCredits.js)
+    }
+      action-endpoint (GetPerson) {
+      accepted-inputs (id)
+      local-endpoint (GetPerson.js)
+    }
+      action-endpoint (GetMovieByActor) {
+      accepted-inputs (id)
+      local-endpoint (GetMovieByActor.js)
+    }
+       action-endpoint (GetTopMovies) {
+      local-endpoint (topMovies.js)
+    }
+      action-endpoint (GetPopularMovies) {
+      local-endpoint (popularMovies.js)
+    }
+      action-endpoint (GetLatestMovies) {
+      local-endpoint (latestMovies.js)
+    }
+      action-endpoint (GetUpcomingMovies) {
+      local-endpoint (upcomingMovies.js)
+    }
   }
 }

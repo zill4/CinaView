@@ -1,0 +1,8 @@
+hints {
+  uncategorized {
+    utterance (With Z Films show me Avengers movies)
+    utterance (Using Z Films find upincoming movies)
+    utterance (Who is in this movie?)
+    utterance (What movies are they in?)
+  }
+}

@@ -1,38 +1,45 @@
 structure (Content) {
-  description (Output)
-  property (age) {
-    type (core.Text)
+  description (Movie/TV returned result.)
+
+    property (title) {
+    type (title)
     min (Optional) max (One)
     visibility (Private)
   }
-   property (color) {
-    type (core.Text)
+    property (id) {
+    type (id)
+    min (Optional) max (One)
+  }
+    property (release) {
+    type (release)
     min (Optional) max (One)
     visibility (Private)
   }
-   property (gender) {
-    type (core.Text)
+     property (rating) {
+    type (rating)
     min (Optional) max (One)
     visibility (Private)
   }
-   property (breed) {
-    type (core.Text)
+    property (overview) {
+    type (overview)
     min (Optional) max (One)
     visibility (Private)
   }
-    property (name) {
-    type (core.Text)
-    min (Optional) max (One)
-    visibility (Private)
-  }
-   property (size) {
-    type (core.Text)
+    property (vote_count) {
+    type (vote_count)
     min (Optional) max (One)
     visibility (Private)
   }
   property (image) {
-    type (viv.core.Url)
-    min (Optional) max (One)
+    type (image.Url)
+    min (Optional) 
     visibility (Private)
   }
+  property (character)
+  {
+    type(character)
+    min (Optional)
+    visibility (Private)
+  }
+  
 }

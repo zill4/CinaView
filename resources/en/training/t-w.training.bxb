@@ -1,5 +1,10 @@
 train (t-wntj6suj62b217tw055hpk2h7) {
   utterance ("[g:GetContent] Show me the movie (avengers)[v:SearchTerm]")
   plan (Y2BmEKvKzMkx0UvOzEssy0wt13POzytJzSthkEQTd08twSUVnJpYlJwRklqUy8DEwAjEDECSkQEEoHwA)
-  last-modified (1560473815435)
+  last-modified (1560900686154)
+}
+train (t-wvpn2s2mkqwsf3kq56mo7p1nn) {
+  utterance ([g:GetTopMovies] top movies)
+  plan (Y2BiEKvKzMkx0UvOzEssy0wt13POzytJzSthkEYTd08tCckv8M0HcooZGIGQAYqBJAA=)
+  last-modified (1560911096278)
 }

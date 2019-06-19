@@ -1,0 +1,27 @@
+capsule-info {
+  display-name (Z Films)
+  developer-name (CrispCode)
+  icon-asset (/images/z.png)
+  description (Search popular, upincoming, and top rated movies easily with Z Films. Z Films, allows you to check information on actors and directors as well. Check it Out! Powered by TMDB.)
+  website-url (https://www.crispcode.io/)
+   store-sections {
+    section (MoviesandTV) 
+  }
+  search-keywords {
+    keyword (movie)
+    keyword (reviews)
+    keyword (entertainment)
+    keyword (tv)
+    keyword (shows)
+    keyword (film)
+    keyword (celebrities)
+    keyword (movies)
+    keyword (cinema)
+  }
+  dispatch-name (Z Films)
+  dispatch-aliases {
+    alias (Z)
+  }
+  action-bg-color (#BF2519)
+  action-fg-color (#FFFFFF)
+}

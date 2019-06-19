@@ -1,0 +1,10 @@
+action (GetMovieByActor) {
+  description (Get Movie info based on actor.)
+  collect {
+    input (id) {
+      type (id)
+      min (Required) max (One)
+    }
+  }
+  output (Content)
+}

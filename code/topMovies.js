@@ -7,22 +7,8 @@ const printer = require('./lib/printer.js');
 exports.function = function (searchTerm) {
   //You can replace with a call to a web api - make sure you map api response to content model
    var content = CONTENT
-  if(searchTerm == null)
-  {
-    var result = GET_REMOTE.getPopularMovies();
-   }
-   else if(searchTerm.toLowerCase() == 'popular')
-   {
-      var result = GET_REMOTE.getPopularMovies();
-   }
-   else if(searchTerm.toLowerCase() == 'latest')
-   {
-      var result = GET_REMOTE.getPopularMovies();
-   }
-   else 
-   {
-    var result = GET_REMOTE.getMovies(searchTerm);
-    }
+   var result = GET_REMOTE.getTopRatedMovies();
+
 
   printer.printThis(result);
   // List of movie objects
@@ -37,7 +23,7 @@ exports.function = function (searchTerm) {
       title: element.title,
       rating: element.vote_average,
       vote_count: element.vote_count,
-      image: 'http://image.tmdb.org/t/p/w300//' + element.poster_path,
+      image: 'http://image.tmdb.org/t/p/300//' + element.poster_path,
       overview: element.overview,
       release: element.release_date
     }

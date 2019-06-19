@@ -1,0 +1,10 @@
+train (t-5b2mw4c6jmtnqx2ssohdyywbd) {
+  utterance ([g:GetPopularMovies] what are the hot movies right now)
+  plan (Y2BiEKvKzMkx0UvOzEssy0wt13POzytJzSthkEcTd08tCcgvKM1JLPLNBwoUMzACIQMUA0kA)
+  last-modified (1560911000170)
+}
+train (t-5k5a04h1u0c3qo313aj7voutl) {
+  utterance ([g:GetUpcomingMovies] show me unreleased films)
+  plan (Y2BiEKvKzMkx0UvOzEssy0wt13POzytJzSthUEATd08tCS1Izs/NzEv3zQeKFDMwAiEDFANJAA==)
+  last-modified (1560910978686)
+}

@@ -1,0 +1,4 @@
+action (GetPopularMovies) {
+  type (Search)
+  output (Content)
+}

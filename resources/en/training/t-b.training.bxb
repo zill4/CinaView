@@ -1,0 +1,5 @@
+train (t-bmqda4t356r8irhz7e6h7d9hd) {
+  utterance ([g:GetUpcomingMovies] show me the latest movies)
+  plan (Y2BiEKvKzMkx0UvOzEssy0wt13POzytJzSthUEATd08tCS1Izs/NzEv3zQeKFDMwAiEDFANJAA==)
+  last-modified (1560911602776)
+}

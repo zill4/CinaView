@@ -1,0 +1,5 @@
+train (t-79022y4xt8eqf28in74gzgnre) {
+  utterance ([g:GetUpcomingMovies] she me the new movies coming out)
+  plan (Y2BiEKvKzMkx0UvOzEssy0wt13POzytJzSthUEATd08tCS1Izs/NzEv3zQeKFDMwAiEDFANJAA==)
+  last-modified (1560911016825)
+}

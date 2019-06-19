@@ -1,0 +1,23 @@
+layout-macro-def (movie-image) {
+  params {
+    param (content) {
+      type (Content)
+      min (Required)
+    }
+  }
+  content {
+    section {
+            content {
+          image-card {
+            title-area {
+              slot1 {
+              text ("#{value(content.title)}")
+              }
+            }
+          //              url("#{value(this.image)}")
+          image-url ("#{value(content.image)}")
+          }
+        }
+    }
+  }
+}

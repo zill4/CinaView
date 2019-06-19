@@ -1,0 +1,10 @@
+action (GetPerson) {
+  description (Get specific info for a given actor.)
+  collect {
+    input (id) {
+      type (id)
+      min (Optional) max (One)
+    }
+  }
+  output (Person)
+}

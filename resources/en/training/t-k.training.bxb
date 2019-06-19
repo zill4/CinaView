@@ -1,0 +1,5 @@
+train (t-k1ko5hs242gh98kc49jwop6qi) {
+  utterance ("[g:GetMovieByActor:continue:GetPerson] What movies is (he)[r:Person] in?")
+  plan (Y2BhEKvKzMkx0UvOzEssy0wt13POzytJzSthkEMTd08t8c0HspwqHZNL8osYBNHkM1MYRNGEAlKLivPzGJgZGBmYgCQDmGYE0kxgzAgSAwA=)
+  last-modified (1560909648050)
+}

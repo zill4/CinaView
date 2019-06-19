@@ -7,46 +7,26 @@ const printer = require('./lib/printer.js');
 exports.function = function (searchTerm) {
   //You can replace with a call to a web api - make sure you map api response to content model
    var content = CONTENT
-  if(searchTerm == null)
-  {
-    var result = GET_REMOTE.getPopularMovies();
-   }
-   else if(searchTerm.toLowerCase() == 'popular')
-   {
-      var result = GET_REMOTE.getPopularMovies();
-   }
-   else if(searchTerm.toLowerCase() == 'latest')
-   {
-      var result = GET_REMOTE.getPopularMovies();
-   }
-   else 
-   {
-    var result = GET_REMOTE.getMovies(searchTerm);
-    }
+   var result = GET_REMOTE.getLatestMovies();
 
   printer.printThis(result);
   // List of movie objects
-  var movies = []
-  // The movie object
+
   var tempMovie = {}
 
-  result.results.forEach(function(element) {
-    // Add each movie to the list of movies.
     tempMovie = {
-      id: element.id,
-      title: element.title,
-      rating: element.vote_average,
-      vote_count: element.vote_count,
-      image: 'http://image.tmdb.org/t/p/w300//' + element.poster_path,
-      overview: element.overview,
-      release: element.release_date
+      id: result.id,
+      title: result.title,
+      rating: result.vote_average,
+      vote_count: result.vote_count,
+      image: 'http://image.tmdb.org/t/p/w300//' + result.poster_path,
+      overview: result.overview,
+      release: result.release_date
     }
-    movies.push(tempMovie);
-});
     // Add a random dad image
     //var dadImages = ['images/dad1.png', 'images/dad2.png', 'images/dad3.png'];
     //var image = dadImages[Math.floor(dadImages.length * Math.random())]
-   return (movies);
+   return (tempMovie);
 
     //pick a random content
     if (content.length) {

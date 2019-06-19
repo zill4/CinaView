@@ -1,0 +1,4 @@
+action (GetTopMovies) {
+  type (Search)
+  output (Content)
+}

@@ -1,0 +1,10 @@
+train (t-d1bfxdn2d6iohvjl0ozg0uxwb) {
+  utterance ([g:GetPopularMovies] What is everyone watching)
+  plan (Y2BiEKvKzMkx0UvOzEssy0wt13POzytJzSthkEcTd08tCcgvKM1JLPLNBwoUMzACIQMUA0kA)
+  last-modified (1560911154104)
+}
+train (t-dczi1vpykb912zn0zrdcfamtl) {
+  utterance ([g:GetUpcomingMovies] movies coming out soon)
+  plan (Y2BiEKvKzMkx0UvOzEssy0wt13POzytJzSthUEATd08tCS1Izs/NzEv3zQeKFDMwAiEDFANJAA==)
+  last-modified (1560910903103)
+}

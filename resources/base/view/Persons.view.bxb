@@ -1,30 +1,35 @@
 result-view {
-  match: Content (this)
+  match: Person (this)
   render {
     layout 
      {
       if (size(this) > 1)
       {
-      for-each (this) { as (content){
+      for-each (this) { as (person){
           section {
             content {
               image-card {
                 title-area {
                   slot1 {
                     single-line {
-                      text ("#{value(content.title)}")
+                      text ("#{value(person.name)}")
                     }
-                  }        
+                  }
+                    slot2 {
+                      single-line {
+                        text("#{value(person.character)}")
+                      }
+                    }
                 }
                 image-object-fit (Contain)
                 aspect-ratio (1:1)
-                image-url ("#{value(content.image)}")
+                image-url ("#{value(person.image)}")
                 
                 on-click  {
                   
                   intent {
-                    goal: GetSpecificContent
-                    value: $expr(content.id)
+                    goal: GetPerson
+                    value: $expr(person.id)
                   }
                 }
               }
@@ -41,7 +46,7 @@ result-view {
                 title-area {
                   slot1 {
                     single-line {
-                  text ("#{value(this.rating)}/10          Reviews: #{value(this.vote_count)}")
+                  text ("#{value(this.name)}")
                     }
                   }        
                 }
@@ -55,25 +60,19 @@ result-view {
               slot1{
                 text {
                   style (Detail_L)
-                  value("Release Date: #{value(this.release)}")
+                  value("Birthday: #{value(this.birthday)}")
 
                 }
               }
             }
-            
                 paragraph {
-                  style (Detail_L)
-                  value("#{value(this.overview)}")
-
-                }
-             }
+                  style (Detail_M)
+                  value("#{value(this.biography)}") 
+              }
             }
             }
-            
           }
       }
       //endif
-      
     }
-    
- 
+  }

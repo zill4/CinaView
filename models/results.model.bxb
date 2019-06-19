@@ -1,0 +1,9 @@
+structure (results) {
+  description (An object containing a set of content.)
+  // Should be an array of a set of content. 
+  property (content) {
+    type (Content)
+    min (Required)
+  }
+  
+}

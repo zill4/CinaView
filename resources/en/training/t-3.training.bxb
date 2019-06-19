@@ -1,0 +1,15 @@
+train (t-3hyn8w95yqmz0io2ynwocvm98) {
+  utterance ([g:GetPopularMovies] what are the most popular films)
+  plan (Y2BiEKvKzMkx0UvOzEssy0wt13POzytJzSthkEcTd08tCcgvKM1JLPLNBwoUMzACIQMUA0kA)
+  last-modified (1560911074624)
+}
+train (t-3i265igfwma8rf1hjhluw7w0s) {
+  utterance ([g:GetTopMovies] show me the top films)
+  plan (Y2BiEKvKzMkx0UvOzEssy0wt13POzytJzSthkEYTd08tCckv8M0HcooZGIGQAYqBJAA=)
+  last-modified (1560911043341)
+}
+train (t-3ndhl1yjb8cs1i7qvosep0b5j) {
+  utterance ("[g:GetCredits:continue:GetSpecificContent] Who is in (this)[r:Content] film?")
+  plan (Y2BhEK3KzMkx0UvOzEssy0wt1wtILSrOz2OQRBN2Ty1xLkpNySwpZhBEk8pMYRBDE3LOzytJzSthYGZgZGACkgxgmhFIM4ExI0gMAA==)
+  last-modified (1560909233120)
+}

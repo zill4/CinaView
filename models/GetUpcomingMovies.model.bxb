@@ -1,0 +1,5 @@
+action (GetUpcomingMovies) {
+  type (Search)
+
+  output (Content)
+}

@@ -1,0 +1,10 @@
+action (GetSpecificContent) {
+  type (Fetch)
+  collect {
+    input (id) {
+      type (id)
+      min (Required) max (One)
+    }
+  }
+  output (Content)
+}
