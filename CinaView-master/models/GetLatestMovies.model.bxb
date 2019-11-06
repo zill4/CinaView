@@ -1,4 +1,0 @@
-action (GetLatestMovies) {
-  type (Search)
-  output (Film)
-}

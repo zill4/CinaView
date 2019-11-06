@@ -1,3 +1,0 @@
-integer (runtime) {
-  description (The number of minutes in a given movie or tv show.)
-}

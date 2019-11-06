@@ -1,4 +1,0 @@
-dialog (Result) {
-  match: Film(this)
-  template("#{raw(this.title)}")
-}

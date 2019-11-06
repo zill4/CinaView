@@ -1,4 +1,0 @@
-action (GetPopularMovies) {
-  type (Search)
-  output (Film)
-}

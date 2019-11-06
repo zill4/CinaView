@@ -1,3 +1,0 @@
-integer (revenue) {
-  description (The gross revenue of a film)
-}

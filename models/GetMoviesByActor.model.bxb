@@ -1,4 +1,5 @@
 action (GetMovieByActor) {
+  type(Search)
   description (Get Movie info based on actor.)
   collect {
     input (id) {
@@ -6,5 +7,5 @@ action (GetMovieByActor) {
       min (Required) max (One)
     }
   }
-  output (Content)
+  output (Film)
 }

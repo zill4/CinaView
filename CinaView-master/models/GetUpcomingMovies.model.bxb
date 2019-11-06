@@ -1,5 +1,0 @@
-action (GetUpcomingMovies) {
-  type (Search)
-
-  output (Film)
-}

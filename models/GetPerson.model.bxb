@@ -1,4 +1,5 @@
 action (GetPerson) {
+  type (Search)
   description (Get specific info for a given actor.)
   collect {
     input (id) {

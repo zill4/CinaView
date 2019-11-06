@@ -1,4 +1,4 @@
 action (GetLatestMovies) {
   type (Search)
-  output (Content)
+  output (Film)
 }
