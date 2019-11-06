@@ -1,0 +1,120 @@
+result-view {
+  match: Film (this)
+  render {
+    layout 
+     {
+      if (size(this) > 1)
+      {
+      for-each (this) { as (content){
+          section {
+            content {
+              title-area {
+                slot1 {
+                text ("#{value(content.title)}")
+                }              
+              }
+
+              cell-card {
+                slot1 {
+                   image {
+                      url ("#{value(content.image)}")
+                      shape (Square)
+                   }
+                }
+                slot2 {
+                  content {
+                     primary {
+                     template ("Ratings: #{value(this.rating[0])}/10      Reviews: #{value(this.vote_count[0])}")
+                    }
+                  }
+                }
+                    on-click  {                      
+                    intent {
+                      goal: GetSpecificContent
+                      value: $expr(content.id)
+                    }
+
+                  }
+              }
+  
+            }
+            
+          }
+        }}
+      } else {
+          section {
+            content {
+              image {
+                object-fit (Contain)
+                aspect-ratio (9:16)
+                url ("#{value(this.image)}")         
+              }
+              spacer 
+              title-area {
+                slot1 {
+                  text  ("#{value(this.rating)}/10          Reviews: #{value(this.vote_count)}")
+                }
+              }
+            title-area {
+              slot1{
+                text {
+                  style (Detail_L)
+                  value("Release Date: #{value(this.release)}")
+
+                }
+              }
+            }
+            
+                paragraph {
+                  style (Detail_L)
+                  value("#{value(this.overview)}")
+
+                }
+
+            divider
+            single-line {
+              text {
+                value ("Cast")
+              }
+            }
+            for-each (this.person) { as (person){
+                    cell-card {
+                      slot1 {
+                        image {
+                          shape (Square)
+                          url ("#{value(person.image)}")
+                        }
+                      }
+                      slot2 {
+                        content {
+                          primary {
+                            template ("#{value(person.name)}")
+                          }
+                          secondary {
+                            template ("#{value(person.character)}")
+                          }
+                        }
+                      }
+                      on-click  {
+                        intent {
+                          goal: GetPerson
+                          value: $expr(person.id)
+                        }
+                      }
+                    }
+                    
+              }}
+
+
+             }
+
+             
+            }
+            }
+          }
+      }
+      //endif
+
+    }
+    
+ 

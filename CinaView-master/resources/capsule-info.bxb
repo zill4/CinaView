@@ -1,0 +1,27 @@
+capsule-info {
+  display-name (Cinema View)
+  developer-name (CrispCode.io)
+  icon-asset (/images/logo.png)
+  description (Search popular, upincoming, and top rated movies easily with Cinema View. Cinema View, allows you to check information on actors and directors as well. Check it Out! Powered by TMDB.)
+  website-url (https://www.crispcode.io/)
+   store-sections {
+    section (MoviesandTV) 
+  }
+
+  search-keywords {
+    keyword (movie)
+    keyword (reviews)
+    keyword (entertainment)
+    keyword (tv)
+    keyword (shows)
+    keyword (film)
+    keyword (celebrities)
+    keyword (cinema)
+  }
+  dispatch-name (Cinema View)
+  dispatch-aliases {
+    alias (Cinema View)
+  }
+  action-bg-color (#BF2519)
+  action-fg-color (#FFFFFF)
+}

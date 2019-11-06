@@ -1,0 +1,5 @@
+train (t-ibjkqyvo0ebjaprmrr1vd5v45) {
+  utterance ("[g:GetMovieByActor:continue:GetPerson] What is (he)[r:Person] in?")
+  plan (Y2BhEK7KzMkx0UvOzEssy0wt13PLzMllkEMTdE8t8c0HspwqHZNL8osYBNHkM1MYRNGEAlKLivPzGJgZGBmYgCQDmGYE0kxgzAgSAwA=)
+  last-modified (1571030320380)
+}

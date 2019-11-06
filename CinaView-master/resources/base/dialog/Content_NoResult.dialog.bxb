@@ -1,0 +1,4 @@
+dialog (NoResult) {
+  match: Film
+  template("Nothing found")
+}
