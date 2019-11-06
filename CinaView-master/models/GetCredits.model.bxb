@@ -1,0 +1,10 @@
+action (GetCredits) {
+  type (Search)
+  collect {
+    input (id) {
+      type (id)
+      min (Required) max (One)
+    }
+  }
+  output (Person)
+}

@@ -1,0 +1,13 @@
+hints {
+  uncategorized {
+    hint (Ask Cinema View, to show me Avengers movies){
+      preferred-hint (Show me Avengers movies)
+    }
+    hint (With Cinema View, show me upincoming movies){
+      preferred-hint (Show me upincoming movies)
+    }
+    hint (Using Cinema View, display top movies) {
+      preferred-hint (Display top movies)
+    }
+  }
+}

@@ -1,0 +1,84 @@
+result-view {
+  match: Person (this)
+  render {
+    layout 
+     {
+      if (size(this) > 1)
+      {
+      for-each (this) { as (person){
+          section {
+            content {
+              image-card {
+                title-area {
+                  slot1 {
+                    single-line {
+                      text ("#{value(person.name)}")
+                    }
+                  }
+                    slot2 {
+                      single-line {
+                        text("#{value(person.character)}")
+                      }
+                    }
+                }
+                image-object-fit (Contain)
+                aspect-ratio (1:1)
+                image-url ("#{value(person.image)}")
+                
+                on-click  {
+                  
+                  intent {
+                    goal: GetPerson
+                    value: $expr(person.id)
+                  }
+                }
+              }
+              
+            }
+            
+          }
+     
+        }}
+      } else {
+          section {
+            content {
+              image-card {
+                title-area {
+                  slot1 {
+                    single-line {
+                  text ("#{value(this.name)}")
+                    }
+                  }        
+                }
+                image-object-fit (Contain)
+                aspect-ratio (1:1)
+                image-url ("#{value(this.image)}") 
+                text-position (Below)
+        
+              }
+            title-area {
+              slot1{
+                text {
+                  style (Detail_L)
+                  value("Birthday: #{value(this.birthday)}")
+
+                }
+              }
+            }
+                paragraph {
+                  style (Detail_M)
+                  value("#{value(this.biography)}") 
+              }
+            }
+            }
+          }
+      }
+      //endif
+    }
+    conversation-drivers {
+      if ("size(this) > 1")
+      {
+
+      }
+    }
+  }
